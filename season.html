@@ -1,0 +1,39 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% import "bootstrap/fixes.html" as fixes %}
+{% import "bootstrap/utils.html" as util %}
+
+{% block title %}This is an example page{% endblock %}
+
+{% block navbar %}
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">4111</a>
+  <a class="navbar-link" href="/logout">logout</a>
+</nav>
+{% endblock %}
+
+{% block content %}
+  <h1>Season {{ season[2] }}</h1>
+  <p>episodes</p>
+  <table class="table">
+    <thead>
+       <tr>
+         <th>eid</th>
+         <th>title</th>
+         <th>duration</th>
+         <th>release date</th>
+       </tr>
+     </thead>
+     <tbody>
+      {% for episode in episodes %}
+        <tr>
+          <th scope="row"><a href="#">{{ episode[0] }}</a></th>
+          <th scope="row"><a href="#">{{ episode[1] }}</a></th>
+          <th scope="row"><a href="#">{{ episode[2] }}</a></th>
+          <th scope="row"><a href="#">{{ episode[3] }}</a></th>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+{% endblock %}

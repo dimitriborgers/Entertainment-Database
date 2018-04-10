@@ -1,0 +1,16 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% import "bootstrap/fixes.html" as fixes %}
+{% import "bootstrap/utils.html" as util %}
+
+{% block title %}This is an example page{% endblock %}
+
+{% block navbar %}
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">4111</a>
+</nav>
+{% endblock %}
+
+{% block content %}
+  {{ wtf.quick_form(form) }}
+{% endblock %}

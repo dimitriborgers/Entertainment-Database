@@ -1,0 +1,41 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% import "bootstrap/fixes.html" as fixes %}
+{% import "bootstrap/utils.html" as util %}
+
+{% block title %}This is an example page{% endblock %}
+
+{% block navbar %}
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">4111</a>
+</nav>
+{% endblock %}
+
+{% block content %}
+  {{ wtf.quick_form(form) }}
+
+  {% if results is not none %}
+    <p>results:</p>
+
+    {% if (results|length) == 0 %}
+      <p>sad. no resutls</p>
+    {% else %}
+      <p>click on result to add it! </p>
+      <table class="table">
+        <tbody>
+          {% for result in results %}
+            <tr>
+              <th scope="row">
+                {% if type_field == 'movie' %}
+                  <a href="/add_movie/{{ result['id'] }}">{{ result["title"] }}</a>
+                {% else %}
+                  <a href="/add_show/{{ result['id'] }}">{{ result["original_name"] }}</a>
+                {% endif %}
+              </th>
+            </tr>
+          {% endfor %}   
+        </tbody>
+      </table>
+    {% endif %}
+  {% endif %}
+{% endblock %}
