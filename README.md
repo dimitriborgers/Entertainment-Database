@@ -18,5 +18,9 @@
   - `pip install -r requirements.txt`
 
 ## Run it 
-
 1. `python app.py`
+
+## Other
+1) PostgreSQL account: djb2195
+
+2) URL: http://databases-4111.herokuapp.com/
