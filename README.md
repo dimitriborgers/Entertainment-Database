@@ -1,4 +1,4 @@
-# 4111
+# CS 4111
 
 ## Setup 
 
@@ -12,7 +12,7 @@
 `git clone https://github.com/Freeslugs/4111`
 
 4. 
-  - `cd 4111`
+  -- `cd 4111`
   - `. env/bin/activate`
   - `virtualenv env --python=python2.7`
   - `pip install -r requirements.txt`
