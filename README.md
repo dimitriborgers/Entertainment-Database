@@ -2,6 +2,7 @@
 
 ### Function
 PSequel/html integrated database for adding/rating/and keeping track of current movie/tv show seasons/episodes/play times.
+------
 
 ### Setup 
 
@@ -19,9 +20,11 @@ PSequel/html integrated database for adding/rating/and keeping track of current 
   - `. env/bin/activate`
   - `virtualenv env --python=python2.7`
   - `pip install -r requirements.txt`
+------
 
 ### Run it 
 1. `python app.py`
+------
 
 ### Other
 1) PostgreSQL account: djb2195
