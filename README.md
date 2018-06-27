@@ -16,7 +16,7 @@ PSequel/html integrated database for adding/rating/and keeping track of current 
 `git clone https://github.com/Freeslugs/4111`
 
 4. 
-  1. `cd 4111`
+    1. `cd 4111`
   2. `. env/bin/activate`
   3. `virtualenv env --python=python2.7`
   4. `pip install -r requirements.txt`
