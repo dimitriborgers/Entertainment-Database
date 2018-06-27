@@ -15,11 +15,11 @@ PSequel/html integrated database for adding/rating/and keeping track of current 
 3. Clone the repo
 `git clone https://github.com/Freeslugs/4111`
 
-4. 
+4. Copy Following
     1. `cd 4111`
-  2. `. env/bin/activate`
-  3. `virtualenv env --python=python2.7`
-  4. `pip install -r requirements.txt`
+    2. `. env/bin/activate`
+    3. `virtualenv env --python=python2.7`
+    4. `pip install -r requirements.txt`
 
 ------
 ### Run it 
