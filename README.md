@@ -27,6 +27,6 @@ PSequel/html integrated database for adding/rating/and keeping track of current 
 
 ------
 ### Other
-1) PostgreSQL account: djb2195
+1) PostgreSQL account: djb21**
 
-2) URL: http://databases-4111.herokuapp.com/
+2) URL: http://databases-4***.herokuapp.com/
